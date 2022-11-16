@@ -1,0 +1,112 @@
+import React from 'react';
+import styled from 'styled-components';
+
+
+export const StyleMain = styled.main`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 150px;
+`;
+
+export const StyleImagem = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        height: 800px;
+    }
+`;
+
+
+export const StyleHero = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    margin-top: 200px;
+    min-width: 585px;
+
+    > span{
+        font-family: 'Montserrat';
+        font-weight: 400px;
+        font-size: 22px;
+        line-height: 27px;
+        color: #202020;
+        opacity: 0.5;
+
+    }
+
+    h1{
+        width: 375px;
+        font-family: 'Elsie Swash Caps', cursive;
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 94px;
+    }
+
+    p{
+        margin-top: 30px;
+        max-width: 481px;
+        font-style: normal;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #202020;
+        opacity: 0.5;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
+
+    }
+
+    form > input{
+        height: 75px;
+        width: 390px;
+        padding-left: 60px;
+        background-image: url("http://localhost:3000/mail.svg");
+        background-repeat: no-repeat;
+        background-position: 20px;
+        border: 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #202020;
+        opacity: 0.3;
+
+
+        
+    }
+
+    form > button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        width: 195px;
+        border: 0;
+        color: white;
+        background-color: #FFCB47;
+        box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+        
+    }
+
+    div > span{
+        color: red;
+        margin-left: 5px;
+    }
+`;
+
