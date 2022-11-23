@@ -61,16 +61,21 @@ export const StyleHero = styled.div`
         opacity: 0.5;
 
     }
+    
 
     form {
         display: flex;
-        flex-direction: row;
+        gap: 10px;
+        flex-direction: column;
         margin-top: 20px;
-        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
 
     }
 
-    form > input{
+    .inputEmail_Botao{
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
+    }
+
+    .inputEmail{
         height: 75px;
         width: 390px;
         padding-left: 60px;
@@ -85,12 +90,28 @@ export const StyleHero = styled.div`
         line-height: 20px;
         color: #202020;
         opacity: 0.3;
-
-
-        
     }
 
-    form > button{
+    .inputName{
+        height: 75px;
+        width: 390px;
+        padding-left: 60px;
+        background-image: url("http://localhost:3000/icons8.png");
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: 20px;
+        border: 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #202020;
+        opacity: 0.3;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
+    }
+
+    .btn{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -101,10 +122,10 @@ export const StyleHero = styled.div`
         color: white;
         background-color: #FFCB47;
         box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
-        
+        height: 75px;
     }
 
-    div > span{
+    .mensagemErro{
         color: red;
         margin-left: 5px;
     }
