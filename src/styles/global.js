@@ -13,6 +13,7 @@ export default createGlobalStyle`
 
 html, body, #root{
     min-height: 100%;
+    min-width: 763px;
 }
 
 body{

@@ -9,6 +9,11 @@ export const StyleMain = styled.main`
     align-items: center;
     flex-wrap: wrap;
     padding: 0 150px;
+
+    @media(max-width: 955px){
+        padding: 0px 0px;
+    }
+
 `;
 
 export const StyleImagem = styled.div`
