@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/global";
 
 import Menu from './components/Menu';
 import Hero from './components/Hero';
+import Ofertas from "./components/ofertas";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <GlobalStyle/>
         <Menu />
         <Hero />
+        <Ofertas />
 
       </>
   );

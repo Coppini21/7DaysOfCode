@@ -1,5 +1,5 @@
 import React from "react";
-import env from "react-dotenv";
+
 import { useState, useEffect, useRef } from 'react'
 
 import emailjs from '@emailjs/browser';
@@ -57,7 +57,6 @@ export default function Hero() {
             delete error.mensagemName;
             delete error.mensagemEmail;
             
-
             alert('"Obrigado pela sua assinatura, você receberá nossas novidades no e-mail [e-mail cadastrado]".')
 
             emailjs.sendForm(`${process.env.REACT_APP_YOUR_SERVICE_ID}`, `${process.env.REACT_APP_YOUR_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_PUBLIC_KEY}`)
@@ -67,12 +66,9 @@ export default function Hero() {
                 console.log(error.text);
             });
 
-
             setError({})
-
         }
 
-       
         return error;
 
     }
@@ -83,10 +79,8 @@ export default function Hero() {
         
         setError(validate(name, email));
        
-
         setName('');
-        setEmail('');  
-        
+        setEmail('');    
     }
 
 
@@ -106,7 +100,7 @@ export default function Hero() {
                         <div>
                             <input className="inputName" type='text' value={name} placeholder="insira seu nome" name='name' onChange={(e) => setName(e.target.value = e.target.value)}/> 
                         </div>
-                        {error ? <span className="mensagemErro">{error.mensagemName}</span> : setError({}) }
+                        {error.mensagemName && <span className="mensagemErro">{error.mensagemName}</span>}
                           
                        <div className="inputEmail_Botao">
                             <input className="inputEmail" type='text' value={email} placeholder="insira seu e-mail" name='from_name' onChange={(e) => setEmail(e.target.value = e.target.value.toLowerCase())} />
@@ -115,13 +109,9 @@ export default function Hero() {
                                 Assinar newsletter
                             </button>
                        </div>
-                       {error ? <span className="mensagemErro">{error.mensagemEmail}</span> : setError({}) }
+                       {error.mensagemEmail && <span className="mensagemErro">{error.mensagemEmail}</span>}
                       
-                            
                     </form>
-
-                   
-
                 </div>
             </StyleHero>
             <StyleImagem>
