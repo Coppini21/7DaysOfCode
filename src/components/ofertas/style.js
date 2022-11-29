@@ -8,6 +8,7 @@ export const StyleSectionOfertas = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* height: 100vh; */
     padding: 0 150px;
 
     .titulo {
@@ -48,6 +49,7 @@ export const StyleContainer = styled.div`
     height: 410px;
     flex-wrap: wrap;
     margin-top: 15px;
+  
 
     .item{
         display: flex;
@@ -55,7 +57,6 @@ export const StyleContainer = styled.div`
         height: 200px;
         background: #FFFFFF;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-        background-image: url("http://localhost:3000/imgPlantas/crassula_ovata.png");
         background-repeat: no-repeat;
         background-size: 215px;
 
@@ -108,6 +109,10 @@ export const StyleContainer = styled.div`
 
     .info-Ofertas a img{
         cursor: pointer;
+    }
+
+    .contagem{
+        display: none;
     }
 
     @media(max-width: 1104px){
