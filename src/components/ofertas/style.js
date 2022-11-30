@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export const StyleSectionOfertas = styled.section`
@@ -8,8 +7,8 @@ export const StyleSectionOfertas = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100vh; */
-    padding: 0 150px;
+    padding: 0 150px 20px 150px;
+    height: 100%;
 
     .titulo {
         display: flex;
@@ -18,16 +17,6 @@ export const StyleSectionOfertas = styled.section`
         margin: 100px 0 0 0;
     }
 
-    .titulo span{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 22px;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 27px;
-            align-items: center;
-            color: #202020;
-            opacity: 0.5;
-        }
     
     .titulo h1{
         font-family: 'Elsie Swash Caps', cursive;
@@ -38,18 +27,91 @@ export const StyleSectionOfertas = styled.section`
         text-align: center;
     }
 
+    .botoes{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: start;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        color: #202020;
+        width: 413px;
+        margin-right: 750px;
+    }
+
+    .divTotalBtnOne label, select{
+        opacity: 0.5;
+    }
+
+    .divTotalBtnTwo label, input{
+        opacity: 0.5;
+    }
+
+    .divTotalBtnTwo input{
+        width: 90px;
+    }
+
+    .btnOne{
+        padding: 10px 20px;
+        border: none;
+        background: #FFCB47;
+        box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+        color: #FFFFFF;
+        margin-left: 15px;
+        transition: all 0.5s;
+
+        &:hover{
+            background: #FFB647;
+        }
+    }
+
+    .btnTwo{
+        padding: 10px 20px;
+        border: none;
+        background: #FFCB47;
+        box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+        color: #FFFFFF;
+        margin-left: 15px;
+        transition: all 0.5s;
+
+        &:hover{
+            background: #FFB647;
+        }
+    }
+
+    @media(max-width: 1300px){
+        .botoes{
+        margin-right: 350px;
+        }
+    }
+
+    @media(max-width: 900px){
+        .botoes{
+        margin-right: 0;
+        }
+        
+    }
+
 `;
 
+
 export const StyleContainer = styled.div`
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px ;
     max-width: 1197px;
-    height: 410px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-  
+    margin-top: 25px;
+    gap: 30px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    
 
     .item{
         display: flex;
@@ -57,14 +119,20 @@ export const StyleContainer = styled.div`
         height: 200px;
         background: #FFFFFF;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-        background-repeat: no-repeat;
-        background-size: 215px;
 
+    }
+
+    .imagem{
+        width: 190px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        position: absolute;
     }
 
 
     .info-Ofertas{
-        margin-left: 190px;
+        margin-left: 200px;
         display: flex;
         flex-direction: column;
         width: 379px;
@@ -98,6 +166,7 @@ export const StyleContainer = styled.div`
         display: flex;
         gap: 25px;
         margin-top: 15px;
+        width: 110px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -111,12 +180,22 @@ export const StyleContainer = styled.div`
         cursor: pointer;
     }
 
-    .contagem{
-        display: none;
+
+    @media(max-width: 1300px){
+        grid-template-columns: 1fr 1fr;
+
+        .botoes{
+        margin-right: 450px;
+        }
     }
 
     @media(max-width: 1104px){
         min-width: 763px;
+    }
+
+    @media(max-width: 900px){
+        grid-template-columns: none;
+        
     }
 `;
 

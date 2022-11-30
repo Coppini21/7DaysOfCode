@@ -3,84 +3,84 @@
         {
             "id": 1,
             "nome": "Ajuga reptans",
-            "preco": "R$ 20,00",
+            "preco": 20,
             "estoque": 10,
             "path_img": "ajuga_reptans.png"
         },
         {
             "id": 2,
             "nome": "Cordyline fruticosa",
-            "preco": "R$ 30,00",
+            "preco": 30,
             "estoque": 5,
             "path_img": "cordyline_fruticosa.png"
         },
         {
             "id": 3,
             "nome": "Crassula ovata",
-            "preco": "R$ 10,00",
+            "preco": 10,
             "estoque": 8,
             "path_img": "crassula_ovata.png"
         },
         {
             "id": 4,
             "nome": "Cyperus rotundus",
-            "preco": "R$ 15,00",
+            "preco": 15,
             "estoque": 15,
             "path_img": "cyperus_rotundus.png"
         },
         {
             "id": 5,
             "nome": "Delairea odorata",
-            "preco": "R$ 18,00",
+            "preco": 18,
             "estoque": 17,
             "path_img": "delairea_odorata.png"
         },
         {
             "id": 6,
             "nome": "Datura metel",
-            "preco": "R$ 20,00",
+            "preco": 20,
             "estoque": 12,
             "path_img": "datura_metel.png"
         },
         {
             "id": 7,
             "nome": "Hedychium coronarium",
-            "preco": "R$ 20,00",
+            "preco": 20,
             "estoque": 8,
             "path_img": "hedychium_coronarium.webp"
         },
         {
             "id": 8,
             "nome": "Deparia petersenii",
-            "preco": "R$ 40,00",
+            "preco": 40,
             "estoque": 5,
             "path_img": "deparia_petersenii.webp"
         },
         {
             "id": 9,
             "nome": "Melinis minutiflora",
-            "preco": "R$ 25,00",
+            "preco": 25,
             "estoque": 22,
             "path_img": "melinis_minutiflora.webp"
         },
         {
             "id": 10,
             "nome": "Poa annua",
-            "preco": "R$ 50,00",
+            "preco": 50,
             "estoque": 40,
             "path_img": "poa_annua.webp"
         },
         {
             "id": 11,
             "nome": "Polygonum persicaria",
-            "preco": "R$ 28,00",
+            "preco": 28,
             "estoque": 7,
             "path_img": "polygonum_persicaria.webp"
         },
         {
             "id": 12,
             "nome": "Citrus limonia",
-            "preco": "R$ 20,00",
+            "preco": 20,
             "estoque": 0,
             "path_img": "citrus_limonia.webp"
         }

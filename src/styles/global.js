@@ -12,8 +12,11 @@ export default createGlobalStyle`
 }
 
 html, body, #root{
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     min-width: 763px;
+
 }
 
 body{

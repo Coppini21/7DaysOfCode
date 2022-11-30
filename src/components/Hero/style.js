@@ -128,7 +128,13 @@ export const StyleHero = styled.div`
         background-color: #FFCB47;
         box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
         height: 75px;
+        transition: all 0.5s;
+
+        &:hover{
+            background: #FFB647;
+        }
     }
+    
 
     .mensagemErro{
         color: red;
