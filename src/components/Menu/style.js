@@ -7,12 +7,12 @@ export const StyleMenu = styled.header`
 
     display: flex;
     width: 100%;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 30px 150px;
     flex-wrap: wrap;
     gap: 10px 60px;
+    box-sizing: border-box;
  
 
     nav{
