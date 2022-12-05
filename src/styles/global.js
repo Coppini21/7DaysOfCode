@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
+import imagemVector from '../assets/Vector.svg';
 
 export default createGlobalStyle`
 
@@ -19,14 +20,12 @@ html, body, #root{
 
 }
 
-body{
-    background-image: url("http://localhost:3000/image 1.svg");
+body{  
+    background-image: url("${imagemVector}");
     background-repeat: no-repeat;
     position: relative;
-    background-image: url("http://localhost:3000/Vector.svg");
     background-position-x: right;
     background-position-y: top;
-    background-repeat: no-repeat;
     background-size: 50%;
 }
 
