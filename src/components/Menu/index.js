@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleMenu } from './style';
-import  imagens from '../../assets/logo.svg'
+import  imagem from '../../assets/logo.svg'
 
 export default function Menu(){
     return(
         <StyleMenu>
             <div>
-                <img src={imagens} />
+                <img src={imagem} alt='Logo imagem'/>
             </div>
            
             <nav>
