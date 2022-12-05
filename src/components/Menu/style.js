@@ -7,7 +7,7 @@ export const StyleMenu = styled.header`
 
     display: flex;
     width: 100%;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 30px 150px;
