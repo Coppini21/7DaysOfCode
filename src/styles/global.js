@@ -15,7 +15,7 @@ html, body, #root{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-width: 763px;
+    width: 100%;
 
 }
 
