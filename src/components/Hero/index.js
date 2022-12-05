@@ -23,39 +23,42 @@ export default function Hero() {
        
         console.log(name, email)
         
+        const newError = {}
 
         if(name === '' || name.length <= 2 || email === '' || !email.includes('@')) {
 
             if(name === '' || name.length <= 2){
-                error.mensagemName = 'Campo não pode estar em branco e deve ter mais de 2 caracteres.';
-
+                newError.mensagemName = 'Campo não pode estar em branco e deve ter mais de 2 caracteres.';
+               
                 if(email === '' || !email.includes('@')) {
-                    error.mensagemEmail = 'Campo não pode estar em branco e deve ter "@".';
+                    newError.mensagemEmail = 'Campo não pode estar em branco e deve ter "@".';     
+
                 } else {
-                    error && delete error.mensagemEmail;
+                    newError && delete newError.mensagemEmail;
                 }
             } else{
-                error && delete error.mensagemName;     
+                newError && delete newError.mensagemName;     
             } 
 
 
             if(email === '' || !email.includes('@')){
-                error.mensagemEmail = 'Campo não pode estar em branco e deve ter "@".';
-
+                newError.mensagemEmail = 'Campo não pode estar em branco e deve ter "@".';
+                
                 if(name === '' || name.length <= 2) {
-                    error.mensagemName = 'Campo não pode estar em branco e deve ter mais de 2 caracteres.';
+                    newError.mensagemName = 'Campo não pode estar em branco e deve ter mais de 2 caracteres.';
+                    
                 } else {
-                    error && delete error.mensagemName;
+                    newError && delete newError.mensagemName;
                 }
             } else { 
-                error && delete error.mensagemEmail;
+                newError && delete newError.mensagemEmail;
             } 
 
-            console.log(error)        
+            console.log(newError)        
 
         } else {
-            delete error.mensagemName;
-            delete error.mensagemEmail;
+            delete newError.mensagemName;
+            delete newError.mensagemEmail;
             
             alert('"Obrigado pela sua assinatura, você receberá nossas novidades no e-mail [e-mail cadastrado]".')
 
@@ -69,7 +72,7 @@ export default function Hero() {
             setError({})
         }
 
-        return error;
+        return newError;
 
     }
 
@@ -98,12 +101,12 @@ export default function Hero() {
                 <div className="divTotalForm">
                     <form ref={form} onSubmit={handleSubmit}>
                         <div>
-                            <input className="inputName" type='text' value={name} placeholder="insira seu nome" name='name' onChange={(e) => setName(e.target.value = e.target.value)}/> 
+                            <input className="inputName" type='text' value={name} placeholder="insira seu nome" name='name' onChange={(e) => setName(e.target.value)}/> 
                         </div>
                         {error.mensagemName && <span className="mensagemErro">{error.mensagemName}</span>}
                           
                        <div className="inputEmail_Botao">
-                            <input className="inputEmail" type='text' value={email} placeholder="insira seu e-mail" name='from_name' onChange={(e) => setEmail(e.target.value = e.target.value.toLowerCase())} />
+                            <input className="inputEmail" type='text' value={email} placeholder="insira seu e-mail" name='from_name' onChange={(e) => setEmail(e.target.value.toLowerCase())} />
 
                             <button className="btn">
                                 Assinar newsletter
