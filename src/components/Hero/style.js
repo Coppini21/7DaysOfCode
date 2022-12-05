@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import imagemEmail from '../../assets/mail.svg';
+import icons8 from '../../assets/icons8.png'
+
 
 export const StyleMain = styled.main`
     display: flex;
@@ -84,7 +87,7 @@ export const StyleHero = styled.div`
         height: 75px;
         width: 390px;
         padding-left: 60px;
-        background-image: url("http://localhost:3000/mail.svg");
+        background-image: url("${imagemEmail}");
         background-repeat: no-repeat;
         background-position: 20px;
         border: 0;
@@ -101,7 +104,7 @@ export const StyleHero = styled.div`
         height: 75px;
         width: 390px;
         padding-left: 60px;
-        background-image: url("http://localhost:3000/icons8.png");
+        background-image: url("${icons8}");
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: 20px;
