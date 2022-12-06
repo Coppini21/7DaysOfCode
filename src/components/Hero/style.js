@@ -144,3 +144,14 @@ export const StyleHero = styled.div`
     }
 `;
 
+export const StyleImagemVector = styled.div`
+    width: 100%;
+    
+    img{
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+`;
