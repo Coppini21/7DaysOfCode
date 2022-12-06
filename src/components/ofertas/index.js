@@ -98,7 +98,6 @@ export default function Ofertas() {
             <div className="botoes">
                 <div className="divTotalBtnOne">
                     <label htmlFor="selectBtnOne">Ordenar por </label>
-
                     <select name="selectBtnOne" id="selectBtnOne" value={selectBtnOne} onChange={(e) => setSelectBtnOne(e.target.value)}>
                         <option value="">Selecione...</option>
                         <option value="1">Nome</option>
