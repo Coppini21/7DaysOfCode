@@ -118,7 +118,7 @@ export default function Hero() {
                 </div>
             </StyleHero>
             <StyleImagem>
-                <img src={imagemHero} />
+                <img src={imagemHero} alt='Imagem planta' />
             </StyleImagem>
 
         </StyleMain>

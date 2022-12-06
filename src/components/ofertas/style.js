@@ -40,7 +40,7 @@ export const StyleSectionOfertas = styled.section`
         font-weight: 400;
         font-style: normal;
         color: #202020;
-        width: 413px;
+        width: 433px;
         margin-right: 750px;
     }
 
