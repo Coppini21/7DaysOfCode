@@ -124,7 +124,7 @@ export default function Ofertas() {
                         (planta.estoque > 0)
                         &&
                         (<div className="item" key={planta.id} >
-                            <div className="imagem" style={{ backgroundImage: `url(../../assets/imgPlantas/${planta.path_img})` }}>
+                            <div className="imagem" style = {{ backgroundImage : `url("http://localhost:3000/imgPlantas/${planta.path_img}")`}} >
                             </div>
                             <div className="info-Ofertas">
                                 <h3>{planta.nome}</h3>
