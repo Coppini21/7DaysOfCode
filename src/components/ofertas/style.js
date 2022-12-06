@@ -56,11 +56,16 @@ export const StyleSectionOfertas = styled.section`
         width: 90px;
     }
 
+    #selectBtnOne{
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .btnOne{
         padding: 10px 20px;
         border: none;
         background: #FFCB47;
         box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+        font-family: 'Montserrat', sans-serif;
         color: #FFFFFF;
         margin-left: 15px;
         transition: all 0.5s;
@@ -68,6 +73,10 @@ export const StyleSectionOfertas = styled.section`
         &:hover{
             background: #FFB647;
         }
+    }
+
+    #valor{
+        font-family: 'Montserrat', sans-serif;
     }
 
     .btnTwo{
@@ -75,6 +84,7 @@ export const StyleSectionOfertas = styled.section`
         border: none;
         background: #FFCB47;
         box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+        font-family: 'Montserrat', sans-serif;
         color: #FFFFFF;
         margin-left: 15px;
         transition: all 0.5s;
@@ -83,6 +93,7 @@ export const StyleSectionOfertas = styled.section`
             background: #FFB647;
         }
     }
+
 
     @media(max-width: 1300px){
         .botoes{
@@ -141,6 +152,7 @@ export const StyleContainer = styled.div`
 
     .info-Ofertas h3{
         margin-top: 25px;
+        margin-bottom: 0;
         font-family: 'Elsie Swash Caps', cursive;
         font-style: normal;
         font-size: 32px;
