@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import imagemVector from '../assets/Vector.svg';
+
 
 export default createGlobalStyle`
 
@@ -21,13 +21,8 @@ html, body, #root{
 
 }
 
-body{  
-    background-image: url("${imagemVector}");
-    background-repeat: no-repeat;
+body{
     position: relative;
-    background-position-x: right;
-    background-position-y: top;
-    background-size: 50%;
 }
 
 button{
@@ -35,3 +30,4 @@ button{
 }
 
 `;
+
