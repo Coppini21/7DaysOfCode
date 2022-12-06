@@ -61,7 +61,7 @@
             "nome": "Melinis minutiflora",
             "preco": 25,
             "estoque": 22,
-            "path_img": "../../../public/imgPlantas/melinis_minutiflora.webp"
+            "path_img": "melinis_minutiflora.webp"
         },
         {
             "id": 10,
