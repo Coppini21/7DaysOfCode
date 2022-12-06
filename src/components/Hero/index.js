@@ -5,9 +5,10 @@ import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser';
 
 
-import { StyleHero, StyleImagem, StyleMain } from './style'
+import { StyleHero, StyleImagem, StyleMain, StyleImagemVector } from './style'
 
-import imagemHero from '../../assets/imagem-hero 1.svg'
+import imagemHero from '../../assets/imagem-hero 1.svg';
+import imagemVector from '../../assets/Vector.svg';
 
 
 
@@ -120,6 +121,9 @@ export default function Hero() {
             <StyleImagem>
                 <img src={imagemHero} alt='Imagem planta' />
             </StyleImagem>
+            <StyleImagemVector>
+                <img src={imagemVector} alt="Imagem Vector" />
+            </StyleImagemVector>
 
         </StyleMain>
 
